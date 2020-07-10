@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DSK</title>
+    </head>
+    <body>
+        <h1>this is login for DSK website</h1>
+        <center>
+                <form action="login" method="post">
+                        {% csrf_token %}
+                        
+                        E-mail&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="text" name="mailid" id="mailid"> <br><br>
+                        
+                        Password&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:<input type="password" name="password" id="password"><br><br>
+                        
+                        <input type="submit" name="submit" value="Sign-In" id="submitbutton">
+                </form>
+        </center>
+    </body>
+</html>
